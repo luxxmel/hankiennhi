@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Jewelry</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Mulish:wght@300;400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="logo">ANH PHƯƠNG Jewelry</a>
+        <ul class="nav-links">
+            <li><a href="index.html">Trang chủ</a></li>
+            <li><a href="gioi-thieu.html">Giới thiệu</a></li>
+            <li><a href="index.html">Sản phẩm</a></li>
+            <li><a href="lien-he.html">Liên hệ</a></li>
+            <li><a href="dang-nhap.html">Tài khoản</a></li>
+        </ul>
+        <div class="nav-actions">
+            <input type="text" class="search-input" class="search-input" placeholder="Tìm kiếm...">
+            <a href="gio-hang.html"><button class="cart-btn" id="cart-btn">Giỏ hàng (0)</button></a>
+        </div>
+    </nav>
+
+    <header class="banner-container">
+        <div class="banner-slider" id="slider">
+            <div class="slide" style="background-image: url('/images/banner1.png');">
+                <div class="slide-content">
+                </div>
+            </div>
+
+            <div class="slide" style="background-image: url('/images/banner_Lac.png');">
+                <div class="slide-content">
+                </div>
+            </div>
+
+            <div class="slide" style="background-image: url('/images/banner2.png');">
+                <div class="slide-content">
+                    <h2>Bộ Sưu Tập Mới 2026</h2>
+                    <p>Khám phá phong cách của bạn</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content checkout-page">
+        <div class="checkout-container">
+            <h2>Thanh Toán Đơn Hàng</h2>
+            <div class="checkout-layout">
+
+                <div class="checkout-form-section">
+                    <form class="checkout-form" id="checkout-form">
+                        <h3>Thông tin giao hàng</h3>
+                        <div class="form-group">
+                            <label>Họ và tên</label>
+                            <input type="text" placeholder="Nhập họ và tên người nhận" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Số điện thoại</label>
+                            <input type="tel" placeholder="Nhập số điện thoại liên hệ" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Địa chỉ chi tiết</label>
+                            <input type="text" placeholder="Số nhà, Tên đường, Phường/Xã, Quận/Huyện, Tỉnh/Thành"
+                                required>
+                        </div>
+                        <div class="form-group">
+                            <label>Ghi chú đơn hàng</label>
+                            <textarea rows="3"
+                                placeholder="Ví dụ: Giao giờ hành chính, gọi trước khi giao..."></textarea>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="order-summary-section">
+                    <h3>Xác nhận thanh toán</h3>
+
+                    <div id="checkout-items"
+                        style="margin-bottom: 20px; border-bottom: 1px dashed #ddd; padding-bottom: 15px;">
+                        <p style="color: #666; font-size: 14px;">(Sản phẩm trong giỏ hàng sẽ hiển thị ở đây)</p>
+                    </div>
+
+                    <div class="price-breakdown">
+                        <div class="breakdown-line">
+                            <span>Tạm tính:</span>
+                            <span id="checkout-subtotal">0đ</span>
+                        </div>
+                        <div class="breakdown-line">
+                            <span>Phí vận chuyển:</span>
+                            <span>30000</span>
+                        </div>
+                    </div>
+
+                    <div class="final-total">
+                        <span>Tổng thanh toán:</span>
+                        <span id="checkout-total"></span>
+                    </div>
+
+                    <button type="button" class="btn pay-btn" onclick="processCheckout()">Xác nhận đặt hàng
+                        (COD)</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="custom-footer">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>VỀ ANH PHƯƠNG Jewelry</h4>
+                    <p>Thương hiệu trang sức cao cấp với sứ mệnh mang đến những sản phẩm tinh tế, sang trọng từ chất
+                        liệu chọn lọc.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>LIÊN KẾT NHANH</h4>
+                    <ul>
+                        <li><a href="index.html">Trang chủ</a></li>
+                        <li><a href="index.html">Sản phẩm</a></li>
+                        <li><a href="gioi-thieu.html">Giới thiệu</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>LIÊN HỆ</h4>
+                    <p>Địa chỉ: 613 Âu Cơ, P. Phú Trung, Q. Tân Phú, TP.HCM</p>
+                    <p>Email: Jewelry.VHU@Jewelry.vn</p>
+                    <p>Điện thoại: 1900 8386</p>
+                </div>
+                <div class="footer-col">
+                    <h4>ĐĂNG KÝ KHUYẾN MÃI</h4>
+                    <form action="#" class="newsletter-form">
+                        <input type="email" placeholder="Email của bạn" required>
+                        <button type="submit">ĐĂNG KÝ</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 ANH PHƯƠNG Jewelry. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
