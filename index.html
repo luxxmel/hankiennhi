@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Jewelry - Trang Chủ</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Mulish:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="logo">ANH PHƯƠNG Jewelry</a>
+        <ul class="nav-links">
+            <li><a href="index.html">Trang chủ</a></li>
+            <li><a href="gioi-thieu.html">Giới thiệu</a></li>
+            <li><a href="index.html">Sản phẩm</a></li>
+            <li><a href="lien-he.html">Liên hệ</a></li>
+            <li><a href="dang-nhap.html">Tài khoản</a></li>
+        </ul>
+        <div class="nav-actions">
+            <input type="text" class="search-input" class="search-input" placeholder="Tìm kiếm...">
+            <a href="gio-hang.html"><button class="cart-btn" id="cart-btn">Giỏ hàng (0)</button></a>
+        </div>
+    </nav>
+
+<header class="banner-container">
+    <div class="banner-slider" id="slider">
+        <div class="slide" style="background-image: url('/images/banner1.png');">
+            <div class="slide-content">               
+            </div>
+        </div>
+
+        <div class="slide" style="background-image: url('/images/banner_Lac.png');">
+            <div class="slide-content">
+            </div>
+        </div>
+
+        <div class="slide" style="background-image: url('/images/banner2.png');">
+            <div class="slide-content">
+                <h2>Bộ Sưu Tập Mới 2026</h2>
+                <p>Khám phá phong cách của bạn</p>
+            </div>
+        </div>
+    </div>
+</header>
+
+    <main class="main-content">
+        <aside class="categories">
+            <h3>Bộ Lọc</h3>
+            <ul id="category-list">
+                <li class="active" onclick="setCategory('all', this)">Tất cả</li>
+                <li onclick="setCategory('nhan', this)">Nhẫn</li>
+                <li onclick="setCategory('day-chuyen', this)">Dây chuyền</li>
+                <li onclick="setCategory('bong-tai', this)">Bông tai</li>
+                <li onclick="setCategory('lac-tay', this)">Lắc tay</li>
+            </ul>
+        </aside>
+
+        <section class="products-section">
+            <h2 class="section-title">Sản Phẩm Mới Nhất</h2>
+            <div class="product-container" id="product-list"></div>
+            <div class="pagination" id="pagination-controls"></div>
+        </section>
+    </main>
+    <footer class="custom-footer">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>VỀ ANH PHƯƠNG Jewelry</h4>
+                    <p>Thương hiệu trang sức cao cấp với sứ mệnh mang đến những sản phẩm tinh tế, sang trọng từ chất liệu chọn lọc.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>LIÊN KẾT NHANH</h4>
+                    <ul>
+                        <li><a href="index.html">Trang chủ</a></li>
+                        <li><a href="index.html">Sản phẩm</a></li>
+                        <li><a href="gioi-thieu.html">Giới thiệu</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>LIÊN HỆ</h4>
+                    <p>Địa chỉ: 613 Âu Cơ, P. Phú Trung, Q. Tân Phú, TP.HCM</p>
+                    <p>Email: Jewelry.VHU@Jewelry.vn</p>
+                    <p>Điện thoại: 1900 8386</p>
+                </div>
+                <div class="footer-col">
+                    <h4>ĐĂNG KÝ KHUYẾN MÃI</h4>
+                    <form action="#" class="newsletter-form">
+                        <input type="email" placeholder="Email của bạn" required>
+                        <button type="submit">ĐĂNG KÝ</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 ANH PHƯƠNG Jewelry. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

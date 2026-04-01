@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng Nhập - VHU Jewelry</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Mulish:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="main-content auth-page">
+        <div class="auth-container login-only">
+            <h2>Đăng Nhập</h2>
+            <p class="auth-subtitle">Chào mừng bạn quay lại với Jewelry</p>
+
+            <form action="index.html" class="auth-form"
+                onsubmit="alert('Đăng nhập thành công! Chào mừng bạn trở lại.');">
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Nhập email của bạn" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Mật khẩu</label>
+                    <input type="password" id="password" placeholder="Nhập mật khẩu" required>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="btn login-btn">Đăng nhập</button>
+                </div>
+            </form>
+
+            <div class="auth-links">
+                <p>Chưa có tài khoản? <a href="dang-ky.html">Đăng ký ngay</a></p>
+                <p><a href="#" class="forgot-pw">Quên mật khẩu?</a></p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="custom-footer">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>VỀ ANH PHƯƠNG Jewelry</h4>
+                    <p>Thương hiệu trang sức cao cấp với sứ mệnh mang đến những sản phẩm tinh tế, sang trọng từ chất
+                        liệu chọn lọc.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>LIÊN KẾT NHANH</h4>
+                    <ul>
+                        <li><a href="index.html">Trang chủ</a></li>
+                        <li><a href="index.html">Sản phẩm</a></li>
+                        <li><a href="gioi-thieu.html">Giới thiệu</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>LIÊN HỆ</h4>
+                    <p>Địa chỉ: 613 Âu Cơ, P. Phú Trung, Q. Tân Phú, TP.HCM</p>
+                    <p>Email: Jewelry.VHU@Jewelry.vn</p>
+                    <p>Điện thoại: 1900 8386</p>
+                </div>
+                <div class="footer-col">
+                    <h4>ĐĂNG KÝ KHUYẾN MÃI</h4>
+                    <form action="#" class="newsletter-form">
+                        <input type="email" placeholder="Email của bạn" required>
+                        <button type="submit">ĐĂNG KÝ</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 ANH PHƯƠNG Jewelry. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
